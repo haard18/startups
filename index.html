@@ -15,10 +15,10 @@
             --bg: #0a0a0a;
             --card-bg: #111111;
             --text: #ffffff;
-            --accent: #39ff14; /* Neon green */
-            --accent2: #ff00ff; /* Neon pink */
-            --border: 3px solid #39ff14;
-            --border-pink: 3px solid #ff00ff;
+            --accent: #00aaff; /* Neon green */
+            --accent2: #ff6b00; /* Neon pink */
+            --border: 3px solid #00aaff;
+            --border-pink: 3px solid #ff6b00;
         }
         
         @font-face {
@@ -33,7 +33,7 @@
             line-height: 1.4;
             padding: 20px;
             background-image: 
-                radial-gradient(circle at 20% 80%, rgba(57, 255, 20, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 20% 80%, rgba(0, 170, 255, 0.05) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.05) 0%, transparent 50%);
         }
         
@@ -42,7 +42,7 @@
             margin: 0 auto; 
             background: var(--card-bg);
             border: var(--border);
-            box-shadow: 0 0 30px rgba(57, 255, 20, 0.3);
+            box-shadow: 0 0 30px rgba(0, 170, 255, 0.3);
             padding: 30px;
         }
         
@@ -95,7 +95,7 @@
         
         .stat:hover {
             border-color: var(--accent);
-            box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+            box-shadow: 0 0 15px rgba(0, 170, 255, 0.3);
         }
         
         .stat-value { 
@@ -138,7 +138,7 @@
         .filters input:focus, .filters select:focus {
             outline: none;
             border-color: var(--accent);
-            box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+            box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
         }
         
         .count {
@@ -177,7 +177,7 @@
         }
         
         tr:hover { 
-            background: rgba(57, 255, 20, 0.1);
+            background: rgba(0, 170, 255, 0.1);
         }
         
         .amount { 
@@ -196,9 +196,9 @@
             text-transform: uppercase;
         }
         
-        .type.seed { border-color: #39ff14; color: #39ff14; }
+        .type.seed { border-color: #00aaff; color: #00aaff; }
         .type.series-a { border-color: #00ffff; color: #00ffff; }
-        .type.series-b { border-color: #ff00ff; color: #ff00ff; }
+        .type.series-b { border-color: #ff6b00; color: #ff6b00; }
         .type.pre-seed { border-color: #ffff00; color: #ffff00; }
         .type.series-c { border-color: #ff6b00; color: #ff6b00; }
         
