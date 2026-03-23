@@ -1,0 +1,802 @@
+[
+  {
+    "name": "Hycosys",
+    "website": "hycosys.in",
+    "industry": "Energy, Environment, Hardware, Manufacturing, Mechanical Engineering",
+    "amount": "$991,843",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Wishlink",
+    "website": "home.wishlink.com",
+    "industry": "Marketplace, B2B Software, E-commerce, Marketing",
+    "amount": "$17,502,104",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Nailinit",
+    "website": "nailin.it",
+    "industry": "Beauty, Consumer Goods, E-commerce, Retail",
+    "amount": "$252,997",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "HireBound",
+    "website": "hirebound.io",
+    "industry": "Recruiting, Artificial Intelligence, B2B Software",
+    "amount": "$2,000,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Home Essentials",
+    "website": "homeessentials.in",
+    "industry": "Retail, Consumer Goods, E-commerce",
+    "amount": "$7,696,446",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Armatrix Automations",
+    "website": "armatrix.in",
+    "industry": "Robotics, Government, Hardware, Manufacturing, Mechanical Engineering",
+    "amount": "$2,100,000",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "MyRental",
+    "website": "myrental.co.in",
+    "industry": "Property Management, Real Estate",
+    "amount": "",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "EZBillPay",
+    "website": "EZBillPay.in",
+    "industry": "FinTech, Finance, B2B Software",
+    "amount": "",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Datoms",
+    "website": "datoms.io",
+    "industry": "B2B Software, Analytics, Cloud Computing, Data, Hardware, Manufacturing",
+    "amount": "$2,755,119",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Flo Mobility",
+    "website": "flomobility.com",
+    "industry": "EV, Automotive, Artificial Intelligence, Hardware, Robotics",
+    "amount": "$2,500,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "FREED",
+    "website": "freed.care",
+    "industry": "FinTech, Finance",
+    "amount": "$6,599,919",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Finanjo",
+    "website": "finanjo.com",
+    "industry": "FinTech, Finance, B2C Software, Personal Development",
+    "amount": "$164,924",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Constelli",
+    "website": "constelli.com",
+    "industry": "Aerospace, Electronics, Government, Hardware, Telecommunications",
+    "amount": "$20,000,000",
+    "funding_type": "Venture - Series Unknown",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Pulse",
+    "website": "pulseio.in",
+    "industry": "Healthcare, Hardware, Manufacturing",
+    "amount": "$4,000,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Curry it",
+    "website": "curryit.in",
+    "industry": "Food and Beverage, Consumer Goods, E-commerce, Manufacturing, Retail",
+    "amount": "$164,849",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Oncare Cancer",
+    "website": "oncarecancer.com",
+    "industry": "Healthcare",
+    "amount": "$2,975,528",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Coulomb Litech",
+    "website": "coulomblitech.com",
+    "industry": "Electronics, Energy, Hardware, Manufacturing",
+    "amount": "$2,204,095",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Mojro Technologies",
+    "website": "mojro.com",
+    "industry": "Logistics, Analytics, Artificial Intelligence, B2B Software, Data",
+    "amount": "$2,997,569",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Wootz.work",
+    "website": "wootz.work",
+    "industry": "Marketplace, B2B Software, Manufacturing, Mechanical Engineering",
+    "amount": "$6,600,000",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Kris@Work",
+    "website": "krisatwork.com",
+    "industry": "B2B Software, Analytics, Artificial Intelligence, Marketing, Sales",
+    "amount": "$3,000,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "ZeroMobIt",
+    "website": "zeromoblt.com",
+    "industry": "B2B Software, Education, Logistics, Mobile, Transportation",
+    "amount": "$164,930",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "MyDesignation",
+    "website": "mydesignation.com",
+    "industry": "Fashion, Consumer Goods, E-commerce, Retail",
+    "amount": "$4,408,190",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Reneonix",
+    "website": "reneonix.com",
+    "industry": "Environment, Artificial Intelligence, Materials",
+    "amount": "$186,998",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "XFlow",
+    "website": "xflowpay.com",
+    "industry": "FinTech, Finance, B2B Software",
+    "amount": "$16,600,000",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Puresta",
+    "website": "puresta.in",
+    "industry": "Beauty, Artificial Intelligence, Consumer Goods, E-commerce, Healthcare",
+    "amount": "$3,738,421",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Gut Clinic",
+    "website": "gutclinic.co",
+    "industry": "Healthcare",
+    "amount": "$989,582",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Prayaan Capital",
+    "website": "prayaancapital.com",
+    "industry": "FinTech, Finance",
+    "amount": "$12,099,852",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Basil",
+    "website": "Yourbasil.com",
+    "industry": "Consumer Goods, E-commerce, Manufacturing, Retail",
+    "amount": "$2,000,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Bounce",
+    "website": "bounceshare.com",
+    "industry": "Transportation, Automotive, EV",
+    "amount": "$5,000,000",
+    "funding_type": "Series F",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Bubble Me",
+    "website": "bubbleme.in",
+    "industry": "Wellness, Beauty, Consumer Goods, E-commerce, Nutrition and Supplements",
+    "amount": "$163,763",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "EZBillPay",
+    "website": "EZBillPay.in",
+    "industry": "FinTech, Finance, B2B Software",
+    "amount": "",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "MyRental",
+    "website": "myrental.co.in",
+    "industry": "Property Management, Real Estate",
+    "amount": "",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Cheerio AI",
+    "website": "cheerioai.com",
+    "industry": "B2B Software, Artificial Intelligence, Cloud Computing",
+    "amount": "$873,376",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "SFO Technologies",
+    "website": "sfotechnologies.net",
+    "industry": "Manufacturing, Aerospace, Electronics, Hardware, Healthcare, Telecommunications",
+    "amount": "$82,220,881",
+    "funding_type": "Private Equity",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "RAS Luxury Oils",
+    "website": "rasluxuryoils.com",
+    "industry": "Beauty, Agriculture, Consumer Goods, Retail, Wellness",
+    "amount": "$7,500,000",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Inamo",
+    "website": "inamo.in",
+    "industry": "Logistics, E-commerce",
+    "amount": "$6,000,000",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Rozana",
+    "website": "rozana.in",
+    "industry": "Marketplace, Community, E-commerce, Marketing",
+    "amount": "$25,000,000",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Pronto",
+    "website": "withpronto.com",
+    "industry": "Home Services, Marketplace",
+    "amount": "$25,000,000",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Bonkers Corner",
+    "website": "bonkerscorner.com",
+    "industry": "Fashion, Consumer Goods, E-commerce, Retail",
+    "amount": "$15,016,960",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "DrinkPrime",
+    "website": "drinkprime.in",
+    "industry": "Consumer Goods, Electronics, Home Services, Manufacturing",
+    "amount": "$2,168,514",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Boba Bhai",
+    "website": "bobabhai.com",
+    "industry": "Food and Beverage, Hospitality",
+    "amount": "$4,337,028",
+    "funding_type": "Venture - Series Unknown",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "UP&RUN",
+    "website": "upandrun.in",
+    "industry": "Food and Beverage, Wellness, Consumer Goods, Fitness, Nutrition and Supplements",
+    "amount": "$206,009",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "OneKiraana",
+    "website": "onekiraana.com",
+    "industry": "B2B Software, E-commerce, Logistics, Marketplace, Retail",
+    "amount": "$1,600,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Confluxe",
+    "website": "confluxe.in",
+    "industry": "Fashion, B2B Software, Marketplace",
+    "amount": "$1,600,000",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Namma Yatri",
+    "website": "nammayatri.in",
+    "industry": "Transportation, B2C Software, Mobile",
+    "amount": "$4,325,147",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Skye Air Mobility",
+    "website": "skyeair.tech",
+    "industry": "Drones, Logistics, Transportation",
+    "amount": "$9,000,000",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Verdant Impact",
+    "website": "verdantimpact.com",
+    "industry": "Agriculture, Artificial Intelligence, B2B Software, Biotechnology",
+    "amount": "$3,000,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Basil",
+    "website": "basil.health",
+    "industry": "Nutrition and Supplements, Wellness, B2C Software",
+    "amount": "$1,500,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "NPrep",
+    "website": "nprep.in",
+    "industry": "Education, Artificial Intelligence, Healthcare, Recruiting",
+    "amount": "$1,500,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Ctruh",
+    "website": "ctruh.com",
+    "industry": "3D, Augmented Reality, Animation, B2B Software, Virtual Reality",
+    "amount": "$108,407",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "ZOFF",
+    "website": "zofffoods.com",
+    "industry": "Food and Beverage, Consumer Goods, Manufacturing",
+    "amount": "$2,000,000",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Mosaic Wellness",
+    "website": "mosaicwellness.in",
+    "industry": "Beauty, Consumer Goods, E-commerce, Retail, Wellness",
+    "amount": "$21,681,474",
+    "funding_type": "Venture - Series Unknown",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Pink Adrak",
+    "website": "pinkadrak.in",
+    "industry": "Food and Beverage, Hospitality",
+    "amount": "$1,333,039",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Kaar Technologies",
+    "website": "kaartech.com",
+    "industry": "Information Technology, Professional Services",
+    "amount": "$10,830,392",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Newtrace",
+    "website": "newtrace.io",
+    "industry": "Energy, Environment, Hardware, Manufacturing",
+    "amount": "$6,194,480",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Aditi Toys",
+    "website": "adititoys.com",
+    "industry": "Manufacturing, Consumer Goods",
+    "amount": "$3,917,114",
+    "funding_type": "Venture - Series Unknown",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "GalaxEye",
+    "website": "galaxeye.space",
+    "industry": "Aerospace, Analytics, Artificial Intelligence, B2B Software, Data, Hardware",
+    "amount": "$4,769,924",
+    "funding_type": "Series A",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Sonic Lamb",
+    "website": "in.soniclamb.com",
+    "industry": "Audio, Consumer Goods, Electronics, Hardware, Manufacturing, Retail, Wearables",
+    "amount": "$1,000,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "AquaExchange",
+    "website": "aquaexchange.com",
+    "industry": "Agriculture, Artificial Intelligence, Analytics, B2B Software, Data, Hardware",
+    "amount": "$8,000,000",
+    "funding_type": "Series B",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "Constems-AI",
+    "website": "constems-ai.com",
+    "industry": "Artificial Intelligence, Analytics, B2B Software, Consumer Goods, Manufacturing, Retail",
+    "amount": "$2,000,000",
+    "funding_type": "Seed",
+    "last_funding_date": "March 2026"
+  },
+  {
+    "name": "EarthSync",
+    "website": "earthsync.io",
+    "industry": "Energy, Analytics, Artificial Intelligence, B2B Software, Environment",
+    "amount": "$1,000,000",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "4baseCare",
+    "website": "4basecare.com",
+    "industry": "Healthcare, Artificial Intelligence, B2B Software, Biotechnology, Data",
+    "amount": "$9,803,025",
+    "funding_type": "Series B",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Cava Athleisure",
+    "website": "cavaathleisure.com",
+    "industry": "Fashion, Wellness, Consumer Goods, E-commerce, Fitness, Retail",
+    "amount": "$4,353,085",
+    "funding_type": "Series A",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "JuniorGo",
+    "website": "juniorgo.in",
+    "industry": "Education, Finance, Personal Development",
+    "amount": "",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Entellus Industries",
+    "website": "entellusind.com",
+    "industry": "Materials, Automotive, Electronics, EV, Manufacturing",
+    "amount": "$5,446,125",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "EZBillPay",
+    "website": "EZBillPay.in",
+    "industry": "FinTech, Finance, B2B Software",
+    "amount": "",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "1Buy.AI",
+    "website": "1buy.ai",
+    "industry": "B2B Software, Artificial Intelligence, Data, Hardware",
+    "amount": "$3,534,664",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "MyRental",
+    "website": "myrental.co.in",
+    "industry": "Property Management, Home Services, Real Estate",
+    "amount": "",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "D-propulse Aerospace",
+    "website": "d-propulse.com",
+    "industry": "Aerospace, Government, Hardware, Manufacturing, Mechanical Engineering",
+    "amount": "$2,728,575",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "ScrapUncle",
+    "website": "scrapuncle.com",
+    "industry": "Home Services, B2C Software, Mobile",
+    "amount": "$2,396,295",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Easy Home Finance",
+    "website": "easyhomefinance.in",
+    "industry": "FinTech, Finance, Real Estate",
+    "amount": "$30,000,000",
+    "funding_type": "Series C",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "The Stack",
+    "website": "thestack.club",
+    "industry": "Nutrition and Supplements, Wellness, Consumer Goods, Retail",
+    "amount": "$600,287",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "AquaAirX",
+    "website": "aquaairx.com",
+    "industry": "Drones, Artificial Intelligence, B2B Software, Cloud Computing, Hardware, Marine, Robotics",
+    "amount": "$1,357,081",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Biopeak",
+    "website": "biopeak.com",
+    "industry": "Healthcare, Analytics, Artificial Intelligence, Biotechnology",
+    "amount": "$2,698,912",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Steadfast Business Consulting",
+    "website": "steadfastconsultants.in",
+    "industry": "Accounting, Finance, Professional Services",
+    "amount": "",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Mysa",
+    "website": "mysa.io",
+    "industry": "FinTech, Finance, Accounting, B2B Software",
+    "amount": "$3,400,000",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "SpotDraft",
+    "website": "spotdraft.com",
+    "industry": "B2B Software, Legal",
+    "amount": "$8,000,000",
+    "funding_type": "Series B",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Nivaan Care",
+    "website": "nivaancare.com",
+    "industry": "Healthcare",
+    "amount": "$7,000,000",
+    "funding_type": "Series A",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Varaha",
+    "website": "varaha.earth",
+    "industry": "Agriculture, Environment",
+    "amount": "$20,000,000",
+    "funding_type": "Series B",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "ZILO",
+    "website": "zilo.one",
+    "industry": "Fashion, E-commerce, Marketplace, Retail",
+    "amount": "$15,300,000",
+    "funding_type": "Series A",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Sippy Films",
+    "website": "sippyfilms.com.",
+    "industry": "Entertainment, Media",
+    "amount": "",
+    "funding_type": "Venture - Series Unknown",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "The Whole Truth",
+    "website": "thewholetruthfoods.com",
+    "industry": "Food and Beverage, Wellness, Consumer Goods, E-commerce, Nutrition and Supplements",
+    "amount": "$51,000,000",
+    "funding_type": "Series D",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "OneStack",
+    "website": "onestack.in",
+    "industry": "FinTech, Finance, B2B Software",
+    "amount": "",
+    "funding_type": "Series A",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Taasha Craft",
+    "website": "taashacraft.com",
+    "industry": "Retail, Consumer Goods, E-commerce, Fashion, Manufacturing",
+    "amount": "$82,941",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "NASH Industries",
+    "website": "nashindia.com",
+    "industry": "Manufacturing, Hardware, Mechanical Engineering",
+    "amount": "",
+    "funding_type": "Private Equity",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "JS AutoCast",
+    "website": "jsautocast.com",
+    "industry": "Manufacturing, Automotive, Materials, Mechanical Engineering",
+    "amount": "$32,773,634",
+    "funding_type": "Venture - Series Unknown",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Good Monk",
+    "website": "goodmonk.in",
+    "industry": "Food and Beverage, Wellness, Consumer Goods, E-commerce, Nutrition and Supplements",
+    "amount": "$3,649,396",
+    "funding_type": "Series A",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Mefron Technologies",
+    "website": "mefron.com",
+    "industry": "Electronics, Hardware, Manufacturing",
+    "amount": "",
+    "funding_type": "Private Equity",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Gamepoint India",
+    "website": "gamepointindia.com",
+    "industry": "Sports, Wellness, Education, Fitness, Recreation",
+    "amount": "$774,248",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Material Depot",
+    "website": "materialdepot.in",
+    "industry": "Artificial Intelligence, B2B Software, Home Services",
+    "amount": "$10,000,000",
+    "funding_type": "Series A",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Aditya Birla Housing Finance",
+    "website": "homefinance.adityabirlacapital.com",
+    "industry": "Finance, Real Estate",
+    "amount": "$304,527,929",
+    "funding_type": "Private Equity",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Neverinstall",
+    "website": "neverinstall.com",
+    "industry": "Cloud Computing, B2B Software, B2C Software",
+    "amount": "",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "EyeROV",
+    "website": "eyerov.com",
+    "industry": "Drones, Artificial Intelligence, Analytics, B2B Software, Hardware, Marine, Robotics",
+    "amount": "$1,437,641",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Doodley",
+    "website": "doodley.in",
+    "industry": "Pets, Food and Beverage, Consumer Goods, Retail",
+    "amount": "$2,211,755",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "CHINI KUM",
+    "website": "drinkchinikum.com",
+    "industry": "Food and Beverage, Consumer Goods, Wellness",
+    "amount": "$110,607",
+    "funding_type": "Pre-Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Jain Cord Industries",
+    "website": "jaincord.com",
+    "industry": "Fashion, Consumer Goods, Manufacturing",
+    "amount": "$22,155,179",
+    "funding_type": "Series A",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Krvvy",
+    "website": "krvvy.com",
+    "industry": "Fashion, Consumer Goods, E-commerce, Retail",
+    "amount": "$132,728",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Curapod",
+    "website": "litemed.co.in",
+    "industry": "Healthcare, Hardware",
+    "amount": "$2,209,596",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "Elixiir Foods",
+    "website": "elixiirfoods.com",
+    "industry": "Food and Beverage, Consumer Goods, E-commerce, Manufacturing, Retail",
+    "amount": "$9,000,000",
+    "funding_type": "Seed",
+    "last_funding_date": "February 2026"
+  },
+  {
+    "name": "GO DESi",
+    "website": "godesi.in",
+    "industry": "Food and Beverage, Consumer Goods, E-commerce, Manufacturing, Retail",
+    "amount": "",
+    "funding_type": "Series B",
+    "last_funding_date": "February 2026"
+  }
+]

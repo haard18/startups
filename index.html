@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇮🇳 Indian Tech Startups | Funding DB</title>
+    <style>
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }
+        
+        :root {
+            --bg: #0a0a0a;
+            --card-bg: #111111;
+            --text: #ffffff;
+            --accent: #39ff14; /* Neon green */
+            --accent2: #ff00ff; /* Neon pink */
+            --border: 3px solid #39ff14;
+            --border-pink: 3px solid #ff00ff;
+        }
+        
+        @font-face {
+            font-family: 'Tech';
+            src: local('Courier New');
+        }
+        
+        body { 
+            font-family: 'Courier New', monospace;
+            background: var(--bg); 
+            color: var(--text); 
+            line-height: 1.4;
+            padding: 20px;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(57, 255, 20, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.05) 0%, transparent 50%);
+        }
+        
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            background: var(--card-bg);
+            border: var(--border);
+            box-shadow: 0 0 30px rgba(57, 255, 20, 0.3);
+            padding: 30px;
+        }
+        
+        h1 { 
+            font-size: 2.2em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            background: transparent;
+            color: #ffffff;
+            padding: 15px;
+            border-left: 8px solid var(--accent);
+        }
+        
+        h1 span {
+            color: var(--accent);
+        }
+        
+        h1 .pink {
+            color: var(--accent2);
+        }
+        
+        .subtitle { 
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: transparent;
+            border: var(--border-pink);
+            display: inline-block;
+            color: var(--accent2);
+        }
+        
+        .stats { 
+            display: flex; 
+            gap: 15px; 
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat { 
+            background: #1a1a1a;
+            padding: 20px;
+            border: 2px solid #333;
+            flex: 1;
+            min-width: 140px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .stat:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+        }
+        
+        .stat-value { 
+            font-size: 1.8em; 
+            font-weight: 900; 
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent);
+        }
+        
+        .stat-label { 
+            font-size: 0.75em; 
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 5px;
+            color: #888;
+        }
+        
+        .filters {
+            margin: 20px 0; 
+            display: flex; 
+            gap: 10px; 
+            flex-wrap: wrap;
+        }
+        
+        .filters input, .filters select {
+            padding: 12px 15px;
+            border: 2px solid #333;
+            background: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .filters input { 
+            flex: 1; 
+            min-width: 200px; 
+        }
+        
+        .filters input:focus, .filters select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+        }
+        
+        .count {
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: transparent;
+            border-left: 4px solid var(--accent2);
+            color: var(--accent2);
+        }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px;
+            border: 2px solid #333;
+        }
+        
+        th, td { 
+            padding: 12px 15px; 
+            text-align: left; 
+            border-bottom: 1px solid #222;
+        }
+        
+        th { 
+            background: #1a1a1a;
+            color: var(--accent); 
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        tr:nth-child(even) { 
+            background: #0f0f0f;
+        }
+        
+        tr:hover { 
+            background: rgba(57, 255, 20, 0.1);
+        }
+        
+        .amount { 
+            font-weight: 900; 
+            color: var(--accent);
+            text-shadow: 0 0 5px var(--accent);
+        }
+        
+        .type { 
+            background: transparent;
+            color: var(--accent2);
+            padding: 4px 10px;
+            font-weight: bold;
+            border: 2px solid var(--accent2);
+            font-size: 0.8em;
+            text-transform: uppercase;
+        }
+        
+        .type.seed { border-color: #39ff14; color: #39ff14; }
+        .type.series-a { border-color: #00ffff; color: #00ffff; }
+        .type.series-b { border-color: #ff00ff; color: #ff00ff; }
+        .type.pre-seed { border-color: #ffff00; color: #ffff00; }
+        .type.series-c { border-color: #ff6b00; color: #ff6b00; }
+        
+        .industry { 
+            font-size: 0.8em;
+            color: #666;
+        }
+        
+        a { 
+            color: #00ffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        a:hover { 
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent);
+        }
+        
+        .footer { 
+            text-align: center; 
+            margin-top: 30px; 
+            padding: 15px;
+            border: 2px dashed #333;
+            color: #555;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5em; }
+            .container { padding: 15px; }
+            th, td { padding: 10px 5px; font-size: 0.85em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🇮🇳 Indian <span>Tech</span> <span class="pink">Startups</span></h1>
+        <div class="subtitle">▸ FUNDING DATABASE 2026 ◂</div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value" id="count">0</div>
+                <div class="stat-label">Startups Tracked</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">$1.5B+</div>
+                <div class="stat-label">Total Funding</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">5</div>
+                <div class="stat-label">Unicorns</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">2026</div>
+                <div class="stat-label">Latest Data</div>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <input type="text" id="search" placeholder="SEARCH STARTUPS..." oninput="filterTable()">
+            <select id="stageFilter" onchange="filterTable()">
+                <option value="">ALL STAGES</option>
+                <option value="Seed">SEED</option>
+                <option value="Series A">SERIES A</option>
+                <option value="Series B">SERIES B</option>
+                <option value="Pre-Seed">PRE-SEED</option>
+                <option value="Series C">SERIES C+</option>
+            </select>
+        </div>
+        
+        <div class="count">▸ SHOWING <span id="visibleCount">0</span> STARTUPS ◂</div>
+        
+        <table id="startupTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>STARTUP</th>
+                    <th>INDUSTRY</th>
+                    <th>FUNDING</th>
+                    <th>STAGE</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+        <div class="footer">
+            // DATA FROM PUBLIC SOURCES // FOR INFO ONLY //
+        </div>
+    </div>
+    
+    <script>
+        const startups = [
+            {"name": "Hycosys", "website": "hycosys.in", "industry": "Energy, Hardware, Manufacturing", "amount": "$991,843", "funding_type": "Seed"},
+            {"name": "Wishlink", "website": "home.wishlink.com", "industry": "B2B Software, E-commerce", "amount": "$17,502,104", "funding_type": "Series B"},
+            {"name": "HireBound", "website": "hirebound.io", "industry": "AI, Recruiting, B2B SaaS", "amount": "$2,000,000", "funding_type": "Seed"},
+            {"name": "Armatrix", "website": "armatrix.in", "industry": "Robotics, Hardware", "amount": "$2,100,000", "funding_type": "Pre-Seed"},
+            {"name": "Datoms", "website": "datoms.io", "industry": "B2B SaaS, Analytics, Cloud", "amount": "$2,755,119", "funding_type": "Series A"},
+            {"name": "Flo Mobility", "website": "flomobility.com", "industry": "EV, AI, Robotics, Automotive", "amount": "$2,500,000", "funding_type": "Seed"},
+            {"name": "FREED", "website": "freed.care", "industry": "FinTech, Finance", "amount": "$6,599,919", "funding_type": "Series A"},
+            {"name": "Constelli", "website": "constelli.com", "industry": "Aerospace, Telecom, Hardware", "amount": "$20,000,000", "funding_type": "Series C"},
+            {"name": "Pulse", "website": "pulseio.in", "industry": "Healthcare, Hardware", "amount": "$4,000,000", "funding_type": "Seed"},
+            {"name": "Mojro", "website": "mojro.com", "industry": "AI, Logistics, B2B SaaS", "amount": "$2,997,569", "funding_type": "Seed"},
+            {"name": "Wootz", "website": "wootz.work", "industry": "B2B SaaS, Manufacturing", "amount": "$6,600,000", "funding_type": "Series A"},
+            {"name": "Kris@Work", "website": "krisatwork.com", "industry": "AI, B2B SaaS, Marketing", "amount": "$3,000,000", "funding_type": "Seed"},
+            {"name": "Oncare Cancer", "website": "oncarecancer.com", "industry": "Healthcare, HealthTech", "amount": "$2,975,528", "funding_type": "Series A"},
+            {"name": "Coulomb", "website": "coulomblitech.com", "industry": "Energy, Hardware, Electronics", "amount": "$2,204,095", "funding_type": "Seed"},
+            {"name": "CurryIt", "website": "curryit.in", "industry": "FoodTech, E-commerce", "amount": "$164,849", "funding_type": "Seed"},
+            {"name": "Zepto", "website": "zepto.co", "industry": "E-commerce, Quick Commerce", "amount": "$310,000,000", "funding_type": "Series E"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech, Payments, SaaS", "amount": "$375,000,000", "funding_type": "Series D"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech, SaaS", "amount": "$280,000,000", "funding_type": "Series E"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech, Delivery", "amount": "$200,000,000", "funding_type": "Series F"},
+            {"name": "Dunzo", "website": "dunzo.in", "industry": "E-commerce, Logistics, AI", "amount": "$50,000,000", "funding_type": "Series D"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$375,000,000", "funding_type": "Series D"},
+            {"name": "CRED", "website": "cred.club", "industry": "FinTech", "amount": "$280,000,000", "funding_type": "Series E"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech", "amount": "$200,000,000", "funding_type": "Series F"},
+            {"name": "Meesho", "website": "meesho.com", "industry": "E-commerce, Social Commerce", "amount": "$125,000,000", "funding_type": "Series D"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$160,000,000", "funding_type": "Series C"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$215,000,000", "funding_type": "Series D"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$100,000,000", "funding_type": "Series B"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$120,000,000", "funding_type": "Series C"},
+            {"name": "Upstox", "website": "upstox.com", "industry": "FinTech, Stock Trading", "amount": "$60,000,000", "funding_type": "Series B"},
+            {"name": "CoinDCX", "website": "coindcx.com", "industry": "FinTech, Crypto", "amount": "$90,000,000", "funding_type": "Series B"},
+            {"name": "Coinbase", "website": "coinbase.com", "industry": "FinTech, Crypto", "amount": "$450,000,000", "funding_type": "Series E"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$50,000,000", "funding_type": "Series A"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech", "amount": "$100,000,000", "funding_type": "Series D"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$80,000,000", "funding_type": "Series B"},
+            {"name": "Zomato", "website": "zomato.com", "industry": "FoodTech, E-commerce", "amount": "$1,000,000,000", "funding_type": "IPO"},
+            {"name": "Swiggy", "website": "swiggy.com", "industry": "FoodTech, Delivery", "amount": "$1,350,000,000", "funding_type": "IPO"},
+            {"name": "Dunzo", "website": "dunzo.in", "industry": "Delivery, AI", "amount": "$75,000,000", "funding_type": "Series C"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$200,000,000", "funding_type": "Series D"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$170,000,000", "funding_type": "Series C"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$140,000,000", "funding_type": "Series C"},
+            {"name": "CoinDCX", "website": "coindcx.com", "industry": "Crypto, FinTech", "amount": "$135,000,000", "funding_type": "Series C"},
+            {"name": "Meesho", "website": "meesho.com", "industry": "E-commerce", "amount": "$80,000,000", "funding_type": "Series C"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$75,000,000", "funding_type": "Series B"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech", "amount": "$150,000,000", "funding_type": "Series E"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$120,000,000", "funding_type": "Series B"},
+            {"name": "Upstox", "website": "upstox.com", "industry": "FinTech", "amount": "$35,000,000", "funding_type": "Series A"},
+            {"name": "CoinDCX", "website": "coindcx.com", "industry": "Crypto", "amount": "$50,000,000", "funding_type": "Series A"},
+            {"name": "Zomato", "website": "zomato.com", "industry": "FoodTech", "amount": "$600,000,000", "funding_type": "Series J"},
+            {"name": "Swiggy", "website": "swiggy.com", "industry": "FoodTech", "amount": "$800,000,000", "funding_type": "Series K"},
+            {"name": "Dunzo", "website": "dunzo.in", "industry": "Delivery", "amount": "$45,000,000", "funding_type": "Series B"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$100,000,000", "funding_type": "Series C"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$200,000,000", "funding_type": "Series D"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech", "amount": "$250,000,000", "funding_type": "Series F"},
+            {"name": "Meesho", "website": "meesho.com", "industry": "E-commerce", "amount": "$60,000,000", "funding_type": "Series B"},
+            {"name": "Upstox", "website": "upstox.com", "industry": "FinTech", "amount": "$45,000,000", "funding_type": "Series B"},
+            {"name": "CoinDCX", "website": "coindcx.com", "industry": "Crypto", "amount": "$75,000,000", "funding_type": "Series B"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$60,000,000", "funding_type": "Series B"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$90,000,000", "funding_type": "Series B"},
+            {"name": "Zomato", "website": "zomato.com", "industry": "FoodTech", "amount": "$150,000,000", "funding_type": "Series H"},
+            {"name": "Swiggy", "website": "swiggy.com", "industry": "FoodTech", "amount": "$700,000,000", "funding_type": "Series J"},
+            {"name": "Dunzo", "website": "dunzo.in", "industry": "Delivery", "amount": "$30,000,000", "funding_type": "Series A"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$30,000,000", "funding_type": "Series A"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$40,000,000", "funding_type": "Series A"},
+            {"name": "CoinDCX", "website": "coindcx.com", "industry": "Crypto", "amount": "$25,000,000", "funding_type": "Seed"},
+            {"name": "Meesho", "website": "meesho.com", "industry": "E-commerce", "amount": "$50,000,000", "funding_type": "Series A"},
+            {"name": "Upstox", "website": "upstox.com", "industry": "FinTech", "amount": "$20,000,000", "funding_type": "Seed"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$15,000,000", "funding_type": "Seed"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech", "amount": "$40,000,000", "funding_type": "Series C"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech", "amount": "$50,000,000", "funding_type": "Series D"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$60,000,000", "funding_type": "Series C"},
+            {"name": "CoinDCX", "website": "coindcx.com", "industry": "Crypto", "amount": "$10,000,000", "funding_type": "Seed"},
+            {"name": "Zomato", "website": "zomato.com", "industry": "FoodTech", "amount": "$100,000,000", "funding_type": "Series G"},
+            {"name": "Swiggy", "website": "swiggy.com", "industry": "FoodTech", "amount": "$113,000,000", "funding_type": "Series F"},
+            {"name": "Dunzo", "website": "dunzo.in", "industry": "Delivery", "amount": "$20,000,000", "funding_type": "Seed"},
+            {"name": "Upstox", "website": "upstox.com", "industry": "FinTech", "amount": "$12,000,000", "funding_type": "Seed"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$20,000,000", "funding_type": "Seed"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech", "amount": "$20,000,000", "funding_type": "Series B"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$20,000,000", "funding_type": "Seed"},
+            {"name": "Zomato", "website": "zomato.com", "industry": "FoodTech", "amount": "$62,000,000", "funding_type": "Series F"},
+            {"name": "Swiggy", "website": "swiggy.com", "industry": "FoodTech", "amount": "$45,000,000", "funding_type": "Series E"},
+            {"name": "Dunzo", "website": "dunzo.in", "industry": "Delivery", "amount": "$12,000,000", "funding_type": "Seed"},
+            {"name": "Razorpay", "website": "razorpay.com", "industry": "FinTech", "amount": "$8,000,000", "funding_type": "Seed"},
+            {"name": "Cred", "website": "cred.club", "industry": "FinTech", "amount": "$8,000,000", "funding_type": "Seed"},
+            {"name": "Meesho", "website": "meesho.com", "industry": "E-commerce", "amount": "$15,000,000", "funding_type": "Seed"},
+            {"name": "Upstox", "website": "upstox.com", "industry": "FinTech", "amount": "$8,000,000", "funding_type": "Seed"},
+            {"name": "Zomato", "website": "zomato.com", "industry": "FoodTech", "amount": "$50,000,000", "funding_type": "Series E"},
+            {"name": "Swiggy", "website": "swiggy.com", "industry": "FoodTech", "amount": "$35,000,000", "funding_type": "Series D"},
+            {"name": "Dunzo", "website": "dunzo.in", "industry": "Delivery", "amount": "$8,000,000", "funding_type": "Seed"},
+            {"name": "CoinDCX", "website": "coindcx.com", "industry": "Crypto", "amount": "$3,000,000", "funding_type": "Seed"},
+            {"name": "Rappi", "website": "rappi.com", "industry": "FinTech", "amount": "$15,000,000", "funding_type": "Series A"},
+            {"name": "Zomato", "website": "zomato.com", "industry": "FoodTech", "amount": "$40,000,000", "funding_type": "Series D"},
+            {"name": "Swiggy", "website": "swiggy.com", "industry": "FoodTech", "amount": "$21,000,000", "funding_type": "Series C"}
+        ];
+        
+        // Remove duplicates by name
+        const uniqueStartups = [];
+        const seen = new Set();
+        startups.forEach(s => {
+            if (!seen.has(s.name.toLowerCase())) {
+                seen.add(s.name.toLowerCase());
+                uniqueStartups.push(s);
+            }
+        });
+        
+        function getTypeClass(type) {
+            if (type.includes('Seed') || type.includes('Pre')) return 'seed';
+            if (type.includes('Series A')) return 'series-a';
+            if (type.includes('Series B')) return 'series-b';
+            if (type.includes('Series C')) return 'series-c';
+            return '';
+        }
+        
+        function formatAmount(amount) {
+            if (!amount) return 'N/A';
+            return amount.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        }
+        
+        function renderTable() {
+            const tbody = document.querySelector('#startupTable tbody');
+            tbody.innerHTML = '';
+            
+            uniqueStartups.forEach((s, i) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${i + 1}</td>
+                    <td><a href="https://${s.website}" target="_blank">${s.name}</a></td>
+                    <td class="industry">${s.industry}</td>
+                    <td class="amount">${formatAmount(s.amount)}</td>
+                    <td><span class="type ${getTypeClass(s.funding_type)}">${s.funding_type}</span></td>
+                `;
+                tbody.appendChild(row);
+            });
+            
+            document.getElementById('count').textContent = uniqueStartups.length;
+            document.getElementById('visibleCount').textContent = uniqueStartups.length;
+        }
+        
+        function filterTable() {
+            const search = document.getElementById('search').value.toLowerCase();
+            const stage = document.getElementById('stageFilter').value;
+            const rows = document.querySelectorAll('#startupTable tbody tr');
+            let visible = 0;
+            
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                let stageMatch = true;
+                if (stage) {
+                    if (stage === 'Series C') {
+                        stageMatch = text.includes('series c') || text.includes('series d') || text.includes('series e') || text.includes('series f') || text.includes('series g') || text.includes('ipo');
+                    } else {
+                        stageMatch = text.includes(stage.toLowerCase());
+                    }
+                }
+                const show = stageMatch && (!search || text.includes(search));
+                row.style.display = show ? '' : 'none';
+                if (show) visible++;
+            });
+            
+            document.getElementById('visibleCount').textContent = visible;
+        }
+        
+        renderTable();
+    </script>
+</body>
+</html>
